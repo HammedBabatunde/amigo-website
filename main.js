@@ -1,5 +1,3 @@
-import './style.css'
-
 const tl = gsap.timeline({ default: { duration: 0.6 } });
 
 window.addEventListener('load', () => {
