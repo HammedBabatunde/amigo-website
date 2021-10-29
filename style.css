@@ -1,10 +1,70 @@
-@import url("https://fonts.googleapis.com/css2?family=Urbanist:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Urbanist:wght@400;600;700&display=swap");
 
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  font-size: 1.25rem;
+  font-family: Urbanist, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
+  line-height: 1.5;
+  word-spacing: 3.2px;
   color: #2c3e50;
-  margin-top: 60px;
+  overflow-x: hidden;
+}
+
+h1 {
+  font-family: Playfair Display, "Times New Roman", Times, serif;
+  font-size: 48px;
+  line-height: 1.25;
+  margin-bottom: 40px;
+  overflow: hidden;
+}
+
+h1 span {
+  display: inline-block;
+}
+
+.home-ctn {
+  position: relative;
+  width: 90%;
+  max-width: 1200px;
+  min-height: 100vh;
+  padding: 144px 0px 0px 0px;
+  margin: 0 auto;
+}
+
+.home-bg-img-ctn {
+  position: absolute;
+  right: -30%;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #888;
+  z-index: -10;
+}
+
+@media (min-width: 1000px) {
+  .home-ctn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .home-text-ctn {
+    width: 48%;
+    max-width: 480px;
+  }
 }
