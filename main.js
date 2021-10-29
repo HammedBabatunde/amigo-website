@@ -1,6 +1,14 @@
 import './style.css'
 
-document.querySelector('#app').innerHTML = `
-  <h1>Hello Vite!</h1>
-  <a href="https://vitejs.dev/guide/features.html" target="_blank">Documentation</a>
-`
+const tl = gsap.timeline();
+
+window.addEventListener('load', () => {
+  tl.from('.home-text-ctn h1 span', {
+    y: "100",
+    duration: 1
+  })
+  tl.from('.home-text-ctn p', {
+    y: "20px",
+    opacity: 0
+  })
+})
