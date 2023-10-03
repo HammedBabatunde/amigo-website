@@ -2,13 +2,14 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Amigo Collaboration</title>
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
-  <body>
+  <body data-theme="dark">
     <section class="home">
+      <a class="color-switch amigo-brightness-contrast" id="change-theme" onclick="changeTheme()"></a>
       <div class="home-ctn">
         <div class="home-text-ctn">
           <h1>
@@ -29,10 +30,14 @@
           <br>
           <p> You can join Tech Communities in Nigeria using this link</p>
         </div>
+        <div class="home-icon">
+          <img src="assets/favicon.svg" alt="">
+        </div>
       </div>
       <div class="home-bg-img-ctn"></div>
     </section>
-    <script src="gsap.min.js"></script>
-    <script src="/main.js"></script>
+    <footer class="site-footer">Amigo - Hacktoberfest 2023</footer>
+    <script src="./js/gsap.min.js"></script>
+    <script src="./js/main.js"></script>
   </body>
 </html>
