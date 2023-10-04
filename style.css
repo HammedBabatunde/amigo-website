@@ -22,6 +22,7 @@ body {
   line-height: 1.5;
   word-spacing: 3.2px;
   background: #000;
+  /* background-image:url('https://files.scec.org/s3fs-public/Community-Software-Development.jpg?Be8eKm3peGjTDFgTMTOSbY54cb8kN5Ij'); */
   color: #ebebeb;
   overflow-x: hidden;
 }
@@ -50,7 +51,10 @@ h1 span {
   position: relative;
   max-width: 1200px;
   height: 100vh;
-  padding: 144px 1rem 1rem 1rem;
+  background: url(https://www.seekpng.com/png/small/861-8616319_analytics-for-startup-businesses-millennials-clipart-transparent-background.png) no-repeat  ;
+  background-position: 690px 124px ;
+  background-size: 40% 75%;
+  padding: 142px 1rem 1rem 1rem;
   margin: 0 auto;
   box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.6);
 }
